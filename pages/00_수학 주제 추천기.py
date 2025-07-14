@@ -8,20 +8,20 @@ st.write("관심 있는 수학 분야를 선택하면, 주제를 추천해드릴
 # 분야 목록
 categories = [
     "실생활 응용 수학",
-    "순수 수학",
+    "순수수학",
     "수학사/수학자",
     "컴퓨터와 수학",
     "수학과 예술"
 ]
 
-# 추천 주제 사전 (순수 수학 주제: 총 3개)
+# 추천 주제 사전 (순수수학으로 이름 변경됨)
 topic_recommendations = {
     "실생활 응용 수학": [
         "삼각함수로 소리와 파동 분석하기",
         "통계로 여론조사 해석하기",
         "함수 모델링으로 인구 예측하기"
     ],
-    "순수 수학 (정수론, 기하 등)": [
+    "순수수학": [
         "피보나치 수열과 황금비",
         "정수론으로 보는 암호의 원리",
         "리만 적분의 개념과 직관적인 이해"
@@ -51,3 +51,4 @@ if selected_category:
     st.subheader(f"🔎 '{selected_category}' 분야 추천 주제:")
     for i, topic in enumerate(topic_recommendations[selected_category], 1):
         st.write(f"{i}. {topic}")
+
